@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and community discussion
+    url: https://github.com/vi-multiplayer/vi-mp-source/discussions
+    about: Ask questions and discuss early ideas in Discussions.
+  - name: Security vulnerability
+    url: https://github.com/vi-multiplayer/vi-mp-source/security/advisories/new
+    about: Follow SECURITY.md and use private reporting when available.

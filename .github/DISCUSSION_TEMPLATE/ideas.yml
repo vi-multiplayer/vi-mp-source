@@ -1,0 +1,24 @@
+title: "Idea: "
+body:
+  - type: markdown
+    attributes:
+      value: "Use this category to explore early ideas. Move a well-scoped, agreed task to Issues. Do not propose leaked material or protection bypasses."
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: What should the project explore?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Who benefits and why?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sources or open questions
+    validations:
+      required: false

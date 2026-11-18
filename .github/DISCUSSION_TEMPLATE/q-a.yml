@@ -1,0 +1,24 @@
+title: "Question: "
+body:
+  - type: markdown
+    attributes:
+      value: "Use this category for project and contributor questions. Do not post secrets, personal data, game files, or vulnerability details."
+  - type: input
+    id: area
+    attributes:
+      label: What part of the project is this about?
+      placeholder: client, server, Lua, SDK, contributing, GitHub
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: What have you already checked?
+    validations:
+      required: false

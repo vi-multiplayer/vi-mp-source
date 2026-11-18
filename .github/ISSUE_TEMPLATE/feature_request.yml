@@ -1,0 +1,42 @@
+name: Feature or design proposal
+description: Propose a feature, requirement, or architecture change.
+title: "[Proposal]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "For broad discussion, use GitHub Discussions. This form is for proposals that may become scoped project work. Do not include leaked or proprietary material."
+  - type: textarea
+    id: need
+    attributes:
+      label: Problem or user need
+      description: Who needs this and why?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the outcome without assuming undocumented game internals.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and tradeoffs
+    validations:
+      required: false
+  - type: textarea
+    id: sources
+    attributes:
+      label: Evidence and public sources
+      description: Link public documentation; identify unknowns.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: This proposal does not depend on leaked code, proprietary game files, or bypassing protections.
+          required: true

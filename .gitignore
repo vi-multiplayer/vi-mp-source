@@ -1,0 +1,28 @@
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Build output and dependencies
+build/
+dist/
+out/
+bin/
+obj/
+target/
+node_modules/
+vendor/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp

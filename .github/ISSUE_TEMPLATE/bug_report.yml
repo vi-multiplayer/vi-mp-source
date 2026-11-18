@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a reproducible issue in project-maintained software.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not attach game files, proprietary assets, secrets, or personal data. Report vulnerabilities privately through the repository security policy."
+  - type: input
+    id: component
+    attributes:
+      label: Affected component
+      description: Which project area is affected?
+      placeholder: client, server, shared, Lua, SDK, tools, docs
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest repeatable set of steps.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Project version or commit
+      description: Leave blank if this concerns documentation or a pre-development proposal.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or screenshots
+      description: Redact tokens, personal data, and machine-specific secrets. Do not upload game files.
+    validations:
+      required: false
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Project scope
+      options:
+        - label: I checked that this is not a security vulnerability report.
+          required: true
+        - label: Any game-specific claims are sourced or clearly marked as unknown.
+          required: true
